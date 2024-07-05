@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-
-    <title>Cuidador de Mascotas</title>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <h2>LOGO</h2>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="#">CÓMO FUNCIONA</a></li>
-                <li><a href="./buscar-cuidadores.html">BUSCAR CUIDADOR</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="content-wrapper">
+        <header>
+            <img class="logo" src="../assets/img/rinre6XjT.png" alt="logo">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="#">CÓMO FUNCIONA</a></li>
+                    <li><a href="./buscar-cuidadores.html">BUSCAR CUIDADOR</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                    <li><a href="./faq.html"> FAQ </a></li>
+                </ul>
+            </nav>
+        </header>
 
     <section class="grid-container">
         <div class="grid-item contenido">
+            <h1> ¿Cómo encontrar al cuidador perfecto para tu mascota? </h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas placeat minima provident veritatis? Obcaecati, quidem! Perspiciatis eveniet laudantium, doloremque, sunt, facere aspernatur quae corrupti sint reiciendis totam ullam saepe perferendis.
             </p>
@@ -37,7 +37,8 @@
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, mollitia ab. Autem delectus ducimus quae quod enim adipisci nihil officiis incidunt aut quisquam minus obcaecati placeat minima, nisi a quo!
             </p>
-            <p>¿Todavía tienes dudas?</p>
+            <h3>¿Todavía tienes dudas?</h3>
+
             <section id="boton">
                 <ul>
                     <li><a href="./contacto.html">CONTÁCTANOS</a></li>
@@ -48,5 +49,30 @@
             <img src="../assets/img/gato feliz.jpg" alt="Gato feliz">
         </div>
     </section>
+
+    <footer class="footer">
+        <img class="logofooter" src="../assets/img/rinre6XjT.png" alt="logo">
+        <div class="footer-content">
+            <h4>Inicio</h4>
+            <h4>Cómo funciona</h4>
+            <h4>Buscar cuidador</h4>
+            <h4>Contacto</h4>
+            <ul class="footer-list">
+                <li class="redes"><img class="instagram" src="../assets/img/Instagram.png" alt="Instagram"></li>
+                <li class="redes"><img class="facebook" src="../assets/img/Facebook.png" alt="Facebook"></li>
+            </ul>
+            <p><span class="date">2024</span> Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </body>
 </html>
